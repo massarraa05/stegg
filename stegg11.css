@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    background-size:cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    color:#fff ;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+ .contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+ }
+ .contact-info , .contact-form{
+    flex: 1;
+ }
+ .contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+ }
+ .contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width:  calc(50%.10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+ }
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+.contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+}
+.logo-img{
+width: 60px;
+}
+.contact-form .send-btn{
+    float: right;
+    background-color: rgb(0, 255, 200);
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+     font-size: 15px;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+     transition-property: background;
+}
+/*-----------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none ;
+    list-style: none;
+}
+:root{
+    --bg-color:#222327;
+    --text-color : #fff;
+    --main-color: #29fd53;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(0, 140, 255) ;
+    color: rgb(0, 140, 255);
+}
+
+nav{
+    position: fixed;
+    width : 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin: 3px;
+}
+.logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+
+
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color); 
+}
+.navbar a.active{
+    color: var(--text-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+
+
+}
+.main-section{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width:70%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+   
+}
+@media (max-width: 1280px){
+    nav{
+        padding: 14px 2%;
+        transition: .2s;
+
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+ 
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translate(5px);
+    }
+    .navbar a.active{
+        color: var(--text-color);
+    }
+    .navbar.open{
+        right: 2%;
+    }
+  
+}
